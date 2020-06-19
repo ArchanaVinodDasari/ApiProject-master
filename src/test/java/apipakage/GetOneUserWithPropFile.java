@@ -51,12 +51,13 @@ public class GetOneUserWithPropFile {
 	    RestAssured.baseURI=myURL+"/api/users/2";
 		
 		given()
-			.queryParam("")
-			.body("")
+		//	.queryParam("")
+		//	.body("")
 		.when()
 			.get()
 		.then().log().all()
 			.assertThat().statusCode(200)
+			.body("data.id", equalTo(2))
 			.body("data.first_name", equalTo("Janet"))
 			.body("data.last_name", equalTo("Weaver"))
 		;

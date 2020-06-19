@@ -9,7 +9,7 @@ public class GetAllAlbumsSingleUser {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("Get Method to get all the album details");
+		System.out.println("Get Method to get all the album details");
 		
 		RestAssured.baseURI="https://gorest.co.in/public-api/albums/8";
 		RestAssured.useRelaxedHTTPSValidation();
