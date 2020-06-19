@@ -23,7 +23,7 @@ public class GetOneUserAuth {
 			.body("result.id[0]", equalTo("1817"))
 		;
 		
-		System.out.println("Get Method - Single User - PASS");
+		System.out.println("Get Method - Single User with Bearer Authentication - PASS");
 	}
 
 }
