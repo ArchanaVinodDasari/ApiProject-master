@@ -12,8 +12,8 @@ public class GetOneUser {
 		RestAssured.baseURI="http://reqres.in/api/users/2";
 		
 		given()
-//			.queryParam("")
-//			.body("")
+			.queryParam("")
+		.body("")
 		.when()
 			.get()
 		.then().log().all()
